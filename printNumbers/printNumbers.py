@@ -51,9 +51,11 @@ functionTable = { CONST_FUNC_CODE_FIBONACCI : FibonacciSequence,
 # MAIN ENTRY
 #
 if __name__ == '__main__':
-    print('')
+    print('#here!') #NK_FK
     print(CONST_VERSION_STRING)
     print('')
+    print(20*'-')
+    print('just a new line of code')
 
     # Process command line arguments.
     params = Parameters(docopt(__doc__, version = CONST_VERSION))
