@@ -35,8 +35,11 @@ Options:
   --factorial     Print the factorial.
 """
 
-from docopt import docopt
-from parameters import *
+try:
+    from docopt import docopt
+    from parameters import *
+except:
+    print('Module "docopt" or "parameters" not available!')
 from functions.fibonacci import *
 from functions.factorial import *
 
