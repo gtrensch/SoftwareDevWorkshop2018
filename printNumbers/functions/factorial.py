@@ -26,4 +26,8 @@ def Factorial(n):
     :param n:  Operand
     :return:   n!
     '''
-    return(math.factorial(n))
+    if n<= 0:
+            return 1
+    else:
+            return n*Factorial(n-1)
+
