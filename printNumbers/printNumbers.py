@@ -35,6 +35,8 @@ Options:
   --factorial     Print the factorial.
 """
 
+#docopt is not installen on my terminal
+# has to be installed
 from docopt import docopt
 from parameters import *
 from functions.fibonacci import *
