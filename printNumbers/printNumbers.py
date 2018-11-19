@@ -51,7 +51,7 @@ functionTable = { CONST_FUNC_CODE_FIBONACCI : FibonacciSequence,
 # MAIN ENTRY
 #
 if __name__ == '__main__':
-    print('here!')
+    print('#here!') #NK_FK
     print(CONST_VERSION_STRING)
     print('')
     print(20*'-')
