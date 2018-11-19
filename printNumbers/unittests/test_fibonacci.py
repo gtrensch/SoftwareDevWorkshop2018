@@ -37,6 +37,12 @@ class TestFibonacci(unittest.TestCase):
     def test_value_2(self):
         self.assertEqual(FibonacciSequence(2), [0, 1])
 
+    def test_value_3(self):
+        self.assertEqual(FibonacciSequence(2), [0, 1, 1])
+
+    def test_value_4(self):
+        self.assertEqual(FibonacciSequence(2), [0, 1, 1, 2])
+
     def test_value_10(self):
         self.assertEqual(FibonacciSequence(10), [0, 1, 1, 2, 3, 5, 8, 13, 21, 34])
 
