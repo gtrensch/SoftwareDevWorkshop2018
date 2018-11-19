@@ -28,7 +28,7 @@ CONST_VERSION_STRING = '+ + PrintNumbers ' + CONST_VERSION + ' (Software Develop
 CONST_DEF_OPERAND_VAL = 10
 CONST_MAX_OPERAND_VAL = 20
 CONST_FUNC_CODE_FIBONACCI = 0
-CONST_FUNC_CODE_FACTORIAL = 1
+CONST_FUNC_CODE_FACTORIAL = 2  # Najmeh Kaffashzadeh modification for tetsing
 
 class Parameters(object):
 
