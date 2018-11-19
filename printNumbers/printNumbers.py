@@ -35,7 +35,7 @@ Options:
   --factorial     Print the factorial.
 """
 
-from docopt import docopt
+#from docopt import docopt
 from parameters import *
 from functions.fibonacci import *
 from functions.factorial import *
@@ -55,6 +55,9 @@ if __name__ == '__main__':
     print(CONST_VERSION_STRING)
     print('')
 
+    print('\nNot yet functional!\n')#added a line#
+    #remove ones it is functional.
+    '''' #start of outcomment
     # Process command line arguments.
     params = Parameters(docopt(__doc__, version = CONST_VERSION))
     params.PrintParameters()
@@ -67,3 +70,5 @@ if __name__ == '__main__':
         print('fib(' + str(params.operand) + ') =', result)
     elif params.functionIndex == CONST_FUNC_CODE_FACTORIAL:
         print(str(params.operand) + '! =', str(result))
+
+    ''' #end of outcomment
