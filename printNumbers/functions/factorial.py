@@ -21,6 +21,7 @@
 
 import math
 
+print('math loaded')
 def Factorial(n):
     '''
     :param n:  Operand

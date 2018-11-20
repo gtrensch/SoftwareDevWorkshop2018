@@ -54,6 +54,7 @@ if __name__ == '__main__':
     print('')
     print(CONST_VERSION_STRING)
     print('')
+    print('Change here')
 
     # Process command line arguments.
     params = Parameters(docopt(__doc__, version = CONST_VERSION))
@@ -67,3 +68,5 @@ if __name__ == '__main__':
         print('fib(' + str(params.operand) + ') =', result)
     elif params.functionIndex == CONST_FUNC_CODE_FACTORIAL:
         print(str(params.operand) + '! =', str(result))
+
+print('Changes made')

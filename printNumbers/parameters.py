@@ -66,7 +66,7 @@ class Parameters(object):
         self.__functionIndex = value
 
     def PrintParameters(self):
-        print('Following Parameters are in use:')
+        print('My following Parameters are in use:')
         print('--------------------------------')
         print('Function Code: ', self.functionIndex)
         print('Operand value: ' + str(self.operand))
