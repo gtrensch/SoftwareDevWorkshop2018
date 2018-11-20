@@ -1,0 +1,12 @@
+test_value_0 (test_factorial.TestFactorial) ... ok
+test_value_1 (test_factorial.TestFactorial) ... ok
+test_value_2 (test_factorial.TestFactorial) ... ok
+test_value_20 (test_factorial.TestFactorial) ... ok
+test_value_1 (test_fibonacci.TestFibonacci) ... ok
+test_value_10 (test_fibonacci.TestFibonacci) ... ok
+test_value_2 (test_fibonacci.TestFibonacci) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
