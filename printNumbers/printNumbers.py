@@ -39,6 +39,7 @@ from docopt import docopt
 from parameters import *
 from functions.fibonacci import *
 from functions.factorial import *
+from functions.Pippi import Pippi
 
 #
 # FUNCTION TABLE
@@ -54,6 +55,12 @@ if __name__ == '__main__':
     print('')
     print(CONST_VERSION_STRING)
     print('')
+    
+    print('Pippi Langstrumpf returns:')
+    print(Pippi(2,2))
+    print('')
+    
+    
 
     # Process command line arguments.
     params = Parameters(docopt(__doc__, version = CONST_VERSION))
