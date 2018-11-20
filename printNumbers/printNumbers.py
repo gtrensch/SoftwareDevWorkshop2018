@@ -56,7 +56,7 @@ if __name__ == '__main__':
     print(CONST_VERSION_STRING)
     print('')
     
-    print('Pippi returns:')
+    print('Pippi Langstrumpf returns:')
     print(Pippi(2,2))
     print('')
     
