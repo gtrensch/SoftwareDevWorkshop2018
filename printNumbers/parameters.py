@@ -26,9 +26,10 @@
 CONST_VERSION = 'V1.0'
 CONST_VERSION_STRING = '+ + PrintNumbers ' + CONST_VERSION + ' (Software Development in Science 2017) + +'
 CONST_DEF_OPERAND_VAL = 10
-CONST_MAX_OPERAND_VAL = 20
+CONST_MAX_OPERAND_VAL = 101
 CONST_FUNC_CODE_FIBONACCI = 0
 CONST_FUNC_CODE_FACTORIAL = 1
+CONST_FUNC_CODE_GAUSSSUM = 2
 
 class Parameters(object):
 
@@ -43,6 +44,8 @@ class Parameters(object):
             self.functionIndex = CONST_FUNC_CODE_FIBONACCI
         elif cmdLineArgs['--factorial']:
             self.functionIndex = CONST_FUNC_CODE_FACTORIAL
+        elif cmdLineArgs['--gausssum']:
+            self.functionIndex = CONST_FUNC_CODE_GAUSSSUM
 
     @property
     def operand(self):
