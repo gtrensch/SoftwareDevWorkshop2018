@@ -24,11 +24,13 @@
 #
 
 CONST_VERSION = 'V1.0'
-CONST_VERSION_STRING = '+ + PrintNumbers ' + CONST_VERSION + ' (Software Development in Science 2017) + +'
+CONST_VERSION_STRING = '+ + PrintNumbers ' + CONST_VERSION + ' (Software Development in Science 2018) + +'
 CONST_DEF_OPERAND_VAL = 10
 CONST_MAX_OPERAND_VAL = 20
 CONST_FUNC_CODE_FIBONACCI = 0
 CONST_FUNC_CODE_FACTORIAL = 1
+CONST_FUNC_CODE_SUBSTRACTION = 2
+CONST_FUNC_CODE_NORMALIZE = 3
 
 class Parameters(object):
 
@@ -43,6 +45,10 @@ class Parameters(object):
             self.functionIndex = CONST_FUNC_CODE_FIBONACCI
         elif cmdLineArgs['--factorial']:
             self.functionIndex = CONST_FUNC_CODE_FACTORIAL
+        elif cmdLineArgs['--substraction']:
+            self.functionIndex = CONST_FUNC_CODE_SUBSTRACTION
+        elif cmdLineArgs['--normalize']:
+            self.functionIndex = CONST_FUNC_CODE_NORMALIZE
 
     @property
     def operand(self):
