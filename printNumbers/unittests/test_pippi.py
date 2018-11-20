@@ -32,13 +32,16 @@ from functions.pippi import *
 class TestPippi(unittest.TestCase):
 
     def test_value_1_2(self):
-        self.assertNotEqual(PippiLangstrumpf(1,2), [3] )
+        self.assertNotEqual(PippiLangstrumpf(1,2), 3 )
 
     def test_value_2_1(self):
-        self.assertNotEqual(PippiLangstrumpf(1,2), [3] )
+        self.assertNotEqual(PippiLangstrumpf(1,2), 3 )
 
     def test_value_0_0(self):
-        self.assertEqual(PippiLangstrumpf(0,0), [0])
+        self.assertEqual(PippiLangstrumpf(0,0), 0)
+        
+    def test_value_n1_n2(self):
+        self.assertEqual(PippiLangstrumpf(-1,-2), -3)        
 
 
 def suite():
