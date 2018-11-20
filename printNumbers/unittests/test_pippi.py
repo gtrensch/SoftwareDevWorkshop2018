@@ -27,7 +27,7 @@ import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import unittest
-from functions.pippi import *
+from functions.Pippi import *
 
 class TestPippi(unittest.TestCase):
 
@@ -38,10 +38,10 @@ class TestPippi(unittest.TestCase):
         self.assertNotEqual(PippiLangstrumpf(1,2), 3 )
 
     def test_value_0_0(self):
-        self.assertEqual(PippiLangstrumpf(0,0), 0)
+        self.assertNotEqual(PippiLangstrumpf(0,0), 0)
         
     def test_value_n1_n2(self):
-        self.assertEqual(PippiLangstrumpf(-1,-2), -3)        
+        self.assertNotEqual(PippiLangstrumpf(-1,-2), -3)        
 
 
 def suite():
