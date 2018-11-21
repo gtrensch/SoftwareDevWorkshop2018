@@ -35,7 +35,7 @@ Options:
   --factorial     Print the factorial.
 """
 
-from docopt import docopt
+from functions.docopt import docopt
 from parameters import *
 from functions.fibonacci import *
 from functions.factorial import *
